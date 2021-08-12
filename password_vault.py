@@ -154,11 +154,11 @@ def passwordVault():
     btn = Button(window, text="+", command=addEntry)
     btn.grid(column=1, pady=5)
 
-    lbl = Label(window, text="Website")
+    lbl = Label(window, text="Website", font=("Helvetica", 14, 'underline'))
     lbl.grid(row=2, column=0, padx=80)
-    lbl = Label(window, text="Username")
+    lbl = Label(window, text="Username", font=("Helvetica", 14, 'underline'))
     lbl.grid(row=2, column=1, padx=80)
-    lbl = Label(window, text="Password")
+    lbl = Label(window, text="Password", font=("Helvetica", 14, 'underline'))
     lbl.grid(row=2, column=2, padx=80)
 
     cursor.execute("SELECT * FROM vault")
@@ -172,7 +172,8 @@ def passwordVault():
             lbl1.grid(column=0, row=i+3)
             lbl1 = Label(window, text=(array[i][2]), font=("Helvetica", 12))
             lbl1.grid(column=1, row=i+3)
-            lbl1 = Label(window, text=(array[i][3]), font=("Helvetica", 12))
+            lbl1 = Label(window, text=(array[i][3]), font=(
+                "Helvetica", 12))
             lbl1.grid(column=2, row=i+3)
 
             btn = Button(window, text="Delete",
