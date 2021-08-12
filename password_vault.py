@@ -23,7 +23,7 @@ username TEXT NOT NULL,
 password TEXT NOT NULL);
 """)
 
-# POPUP
+# POPUP for inputs
 
 
 def popUp(text):
@@ -178,7 +178,7 @@ def passwordVault():
 
             btn = Button(window, text="Delete",
                          command=partial(removeEntry, array[i][0]))
-            btn.grid(column=3, row=i+3, pady=4)
+            btn.grid(column=3, row=i+3, pady=8)
 
             i = i+1
 
