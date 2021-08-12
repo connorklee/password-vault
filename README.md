@@ -1,2 +1,2 @@
 # password-vault
- Store passwords on your local machine using SQL databases 
+ Store passwords with a hashed master key on your local machine using SQL databases 
